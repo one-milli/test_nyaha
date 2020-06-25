@@ -14,16 +14,16 @@ public class ball : MonoBehaviour
     void Update()
     {
         Vector3 pos = transform.position;
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.A))
         {
             pos -= transform.forward * 0.5f;
-        }else if (Input.GetKey(KeyCode.RightArrow))
+        }else if (Input.GetKey(KeyCode.D))
         {
             pos += transform.forward * 0.5f;
-        }else if (Input.GetKey(KeyCode.UpArrow))
+        }else if (Input.GetKey(KeyCode.W))
         {
             pos -= transform.right * 0.5f;
-        }else if (Input.GetKey(KeyCode.DownArrow))
+        }else if (Input.GetKey(KeyCode.Z))
         {
             pos += transform.right * 0.5f;
         }
